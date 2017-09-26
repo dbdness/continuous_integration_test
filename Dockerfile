@@ -1,7 +1,7 @@
 FROM eguahlak/glassfish-cph
 MAINTAINER AKA RHP
 
- COPY ./dist/*.war /opt/glassfish4/glassfish/domains/domain1/autodeploy/HelloWorldWebApp.war
+ COPY ./target/*.war /opt/glassfish4/glassfish/domains/domain1/autodeploy/HelloWorldWebApp.war
 
  RUN wget \
     https://github.com/dbdness/continuous_integration_test/blob/master/dist/HelloWorldWebApp.war?raw=true \
